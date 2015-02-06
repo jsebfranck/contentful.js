@@ -55,7 +55,19 @@ var client = contentful.createClient({
   secure: true,
 
   // Set an alternate hostname, default shown.
-  host: 'cdn.contentful.com'
+  host: 'cdn.contentful.com',
+
+  // Set the proxy host. Optional.
+  proxyHost: 'myProxyHost',
+
+  // Set the proxy port. Optional.
+  proxyPort: 1234,
+
+  // Set the proxy user name. Optional.
+  proxyUsername: 'myProxyUserName',
+
+  // Set the proxy password. Optional.
+  proxyHost: 'myProxyPassword'
 });
 
 var log = console.log.bind(console); // wat

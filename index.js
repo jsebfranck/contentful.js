@@ -23,6 +23,10 @@ var Client = redefine.Class({
     if (!options.query) options.query = {};
     options.headers['Content-Type'] = 'application/vnd.contentful.delivery.v1+json';
     options.query.access_token = this.options.accessToken;
+    options.proxyHost = this.options.proxyHost;
+    options.proxyPort = this.options.proxyPort;
+    options.proxyUsername = this.options.proxyUsername;
+    options.proxyPassword = this.options.proxyPassword;
 
     var uri = [
       this.options.secure ? 'https' : 'http',
