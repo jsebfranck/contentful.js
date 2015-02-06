@@ -10,7 +10,7 @@
   "dependencies": {
     "contentful-resolve-response": "~0.1.0",
     "lodash": "~2.4.1",
-    "questor": "git+https://github.com/jsebfranck/questor.git#proxy_support_with_parameters",
+    "questor": "git+https://github.com/jsebfranck/questor.git",
     "redefine": "~0.2.0"
   },
   "devDependencies": {
